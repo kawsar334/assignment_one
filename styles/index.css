@@ -10,14 +10,14 @@
 }
 /* global class for button */
 .btn{
-    
+
 }
 
 /* main  */
 main{
     width: 100%;
     height: max-content;
-    background-color: red;
+    /* background-color: red; */
     overflow-x: hidden;
 
 }
@@ -63,10 +63,65 @@ nav>.navwrapper>.navright{
 
 
 /* banner start here ========================= */
+.banner{
+    width: 100%;
+    height: calc(100vh - 90px);
+    background:url("/B10A1-Challenge-Begins/assets/Hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.banner>.bannercontents{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    
+}
+.banner .bannercontents .bannerimg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+.banner .bannercontents .bannerheader{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.banner .bannercontents .bannerpara{
+    width: 60%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.banner .bannercontents .bannerbtn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+}
 /* banner end here ========================= */
 
 
 /* work start here ========================== */
+.work{
+    background-color: rgba(13, 19, 33, 0.02);
+    width: 100%;
+    height: 100vh;
+}
 /* work end here ========================== */
 
 /* video start here======================== */
