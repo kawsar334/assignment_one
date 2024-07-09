@@ -8,13 +8,12 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
-/* global class for button */
-.btn{
 
-}
+/* global class for button */
+.btn {}
 
 /* main  */
-main{
+main {
     width: 100%;
     height: max-content;
     overflow-x: hidden;
@@ -25,15 +24,16 @@ main{
 
 
 /* navbar start here ========================== */
-nav{
+nav {
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-nav>.navwrapper{
+
+nav>.navwrapper {
     background-color: white;
     width: 85%;
     height: 100%;
@@ -41,31 +41,34 @@ nav>.navwrapper{
     justify-content: space-between;
     align-items: center;
 }
-nav>.navwrapper>.navlogo{
+
+nav>.navwrapper>.navlogo {
     font-size: 30px;
     text-decoration: none;
     color: black;
     font-weight: 600;
     text-transform: capitalize;
 }
-nav>.navwrapper>.navright{
+
+nav>.navwrapper>.navright {
     text-decoration: none;
-    padding: 10px ;
+    padding: 10px;
     border: 1px solid lightgray;
     border-radius: 5px;
     color: black;
     text-transform: capitalize;
 }
+
 /* navbar end here ========================== */
 
 
 
 
 /* banner start here ========================= */
-.banner{
+.banner {
     width: 100%;
     height: calc(100vh - 90px);
-    background:url("../assets/Hero-bg.png");
+    background: url("../assets/Hero-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -74,7 +77,8 @@ nav>.navwrapper>.navright{
     /* align-items: center; */
 
 }
-.banner>.bannercontents{
+
+.banner>.bannercontents {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -83,9 +87,10 @@ nav>.navwrapper>.navright{
     gap: 10px;
     padding: 10px;
 
-    
+
 }
-.banner .bannercontents .bannerimg{
+
+.banner .bannercontents .bannerimg {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -93,17 +98,20 @@ nav>.navwrapper>.navright{
     margin-bottom: 20px;
 
 }
-.banner .bannercontents .bannerheader{
+
+.banner .bannercontents .bannerheader {
     text-align: center;
     text-transform: capitalize;
     font-size: 25px;
 }
-.banner .bannercontents .bannerpara{
+
+.banner .bannercontents .bannerpara {
     width: 60%;
     text-align: center;
     text-transform: capitalize;
 }
-.banner .bannercontents .bannerbtn{
+
+.banner .bannercontents .bannerbtn {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -112,21 +120,23 @@ nav>.navwrapper>.navright{
     background-color: black;
     margin-top: 20px;
 }
+
 /* banner end here ========================= */
 
 
 /* work start here ========================== */
-.work{
+.work {
     width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin:100px 0px;
+    margin: 100px 0px;
     padding: 20px;
 }
-.workwrapper{
+
+.workwrapper {
     background-color: rgba(13, 19, 33, 0.02);
     width: 80%;
     display: flex;
@@ -136,24 +146,29 @@ nav>.navwrapper>.navright{
     gap: 20px;
     border-radius: 10px;
 }
-.worktop{
+
+.worktop {
     width: 70%;
     margin: 20px auto;
     text-align: center;
     text-transform: capitalize;
     background-color: transparent;
 }
-.work_header{
+
+.work_header {
     margin: 10px 0px;
 }
-.work_para{
+
+.work_para {
     font-size: 14px;
 
 }
-.workbottom{
+
+.workbottom {
     width: 100%;
 }
-.work_items{
+
+.work_items {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -161,9 +176,10 @@ nav>.navwrapper>.navright{
     justify-content: flex-start;
     align-items: center;
 
-    
+
 }
-.work_item{
+
+.work_item {
     background: linear-gradient(to right, rgba(0, 76, 232, 0.05), rgba(255, 255, 255, 0));
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
     width: 80%;
@@ -173,15 +189,17 @@ nav>.navwrapper>.navright{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    cursor: pointer;  
-    flex-wrap: wrap;  
+    cursor: pointer;
+    flex-wrap: wrap;
 }
-.work_item_center{
-    justify-content: center ;
+
+.work_item_center {
+    justify-content: center;
     gap: 20px;
     background: linear-gradient(to top, rgba(255, 76, 30, 0.05), rgba(255, 255, 255, 0));
 }
-.work_item_contents{
+
+.work_item_contents {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -190,30 +208,35 @@ nav>.navwrapper>.navright{
     gap: 20px;
     text-transform: capitalize;
 }
-.work_item_header{
+
+.work_item_header {
     color: #555;
     font-size: 20px;
     font-weight: 400;
 
 }
-.work_item_para{
+
+.work_item_para {
     font-size: 14px;
 }
-.workimg{
+
+.workimg {
     width: 200px;
     height: 200px;
-    object-fit:cover;
+    object-fit: cover;
 }
-.work_link{
+
+.work_link {
     text-decoration: none;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     color: black;
     padding: 5px 10px;
 }
+
 /* work end here ========================== */
 
 /* video start here======================== */
-.video_container{
+.video_container {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -223,15 +246,18 @@ nav>.navwrapper>.navright{
     gap: 30px;
 
 }
-.video_header{
+
+.video_header {
     width: 90%;
     text-align: center;
 }
-.video_para{
+
+.video_para {
     width: 70%;
     text-align: center;
 }
-.video{
+
+.video {
     width: 70%;
     height: 300px;
     object-fit: cover;
@@ -239,11 +265,12 @@ nav>.navwrapper>.navright{
     padding: 20px;
     border: 1px solid lightgray;
 }
+
 /* video end here======================== */
 
 
 /* target start here======================== */
-.target{
+.target {
     width: 70%;
     display: flex;
     justify-content: center;
@@ -252,23 +279,27 @@ nav>.navwrapper>.navright{
     gap: 10px;
     margin: 50px auto;
 }
-.target_h{
+
+.target_h {
     font-size: 30px;
     text-align: center;
 }
-.target_p{
+
+.target_p {
     font-size: 14px;
     text-transform: capitalize;
 
 }
-.target_items{
+
+.target_items {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-.target_item{
+
+.target_item {
     width: 25%;
     padding: 10px;
     display: flex;
@@ -277,47 +308,53 @@ nav>.navwrapper>.navright{
     flex-direction: column;
     border-radius: 10px;
     gap: 10px;
-       
+
 }
-.target_para{
+
+.target_para {
     width: 80%;
 }
-.target_img{
+
+.target_img {
     width: 50px;
     height: 50px;
-    border-radius:10px;
+    border-radius: 10px;
 
 }
 
-.target_link{
+.target_link {
     color: black;
     text-decoration: underline;
 }
+
 /* target end here==================== */
 
 
 /* next target  start here===============*/
-.next{
+.next {
     width: 100%;
     height: auto;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
-.next_header{
+
+.next_header {
     text-align: center;
     font-size: 30px;
 }
-.next_para{
+
+.next_para {
     width: 48%;
     text-align: center;
     font-size: 13px;
     margin: 10px auto;
 }
-.next_items{
+
+.next_items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +365,8 @@ nav>.navwrapper>.navright{
     padding: 20px;
 
 }
-.nextitem{
+
+.nextitem {
     border: 1px solid lightgray;
     display: flex;
     justify-content: flex-start;
@@ -338,12 +376,14 @@ nav>.navwrapper>.navright{
     border-radius: 10px;
     cursor: pointer;
 }
-.nextimg{
+
+.nextimg {
     width: 70px;
     height: 70px;
     object-fit: cover;
 }
-.nextitem_contents{
+
+.nextitem_contents {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -351,22 +391,26 @@ nav>.navwrapper>.navright{
     gap: 10px;
     text-transform: capitalize;
 }
-.next_item_header{
+
+.next_item_header {
     font-size: 25px;
     color: #555;
 }
-.next_item_para{
+
+.next_item_para {
     font-size: 18px;
 }
-.next_item_link{
+
+.next_item_link {
     color: black;
     font-size: 16px;
 }
+
 /* next target  end here===============*/
 
 
 /* contact start here=============== */
-.contact{
+.contact {
     width: 80%;
     height: 186px;
     background: url('../assets/handshake.jpg');
@@ -380,22 +424,25 @@ nav>.navwrapper>.navright{
     flex-direction: column;
     gap: 20px;
     color: white;
-    
+
 }
-.contactform{
+
+.contactform {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
 }
-.contact_input{
+
+.contact_input {
     width: 80%;
-    padding: 10px ;
+    padding: 10px;
     outline: none;
     border: 1px solid lightgray;
     border-radius: 5px;
 }
-.submit_btn{
+
+.submit_btn {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -403,11 +450,12 @@ nav>.navwrapper>.navright{
     cursor: pointer;
 
 }
+
 /* contact end here=============== */
 
 
 /* footer start here =================== */
-footer{
+footer {
     margin: 30px auto;
     width: 80%;
     height: 100px;
@@ -416,27 +464,33 @@ footer{
     align-items: center;
 
 }
-.footertext{
+
+.footertext {
     text-transform: capitalize;
     color: #555;
 }
-.footer_links{
+
+.footer_links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     list-style: none;
 }
-.footer_links>li{
+
+.footer_links>li {
     cursor: pointer;
 
 }
-.footer_links>li>a{
+
+.footer_links>li>a {
     text-decoration: none;
 
 }
-.footer_links>li>a>img{
+
+.footer_links>li>a>img {
     width: 25px;
     height: 25px;
 }
+
 /* footer end here===================== */
