@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /* universal selector-- romoved default margin padding and set box sizing , fontfamily */
 * {
     margin: 0;
@@ -79,13 +78,13 @@ nav>.navwrapper>.navright {
 }
 
 .banner>.bannercontents {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    width: 700px;
 
 
 }
@@ -138,7 +137,7 @@ nav>.navwrapper>.navright {
 
 .workwrapper {
     background-color: rgba(13, 19, 33, 0.02);
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +181,7 @@ nav>.navwrapper>.navright {
 .work_item {
     background: linear-gradient(to right, rgba(0, 76, 232, 0.05), rgba(255, 255, 255, 0));
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    width: 90%;
     height: max-content;
     padding: 20px;
     border-radius: 5px;
@@ -248,7 +247,7 @@ nav>.navwrapper>.navright {
 }
 
 .video_header {
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
@@ -301,6 +300,7 @@ nav>.navwrapper>.navright {
 
 .target_item {
     width: 25%;
+    width: 300px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -413,11 +413,12 @@ nav>.navwrapper>.navright {
 .contact {
     width: 80%;
     height: 186px;
-    background: url('../assets/handshake.jpg');
+    /* background: url('../assets/handshake.jpg'); */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('../assets/handshake.jpg') center/cover no-repeat;
     margin: 40px auto;
     border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,10 +429,13 @@ nav>.navwrapper>.navright {
 }
 
 .contactform {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .contact_input {
