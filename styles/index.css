@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* universal selector-- romoved default margin padding and set box sizing , fontfamily */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+/* global class for button */
+.btn{
+    
+}
+
+/* main  */
+main{
+    width: 100%;
+    height: max-content;
+    background-color: red;
+    overflow-x: hidden;
+
+}
+
+
+
+
+/* navbar start here ========================== */
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav>.navwrapper{
+    background-color: white;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>.navwrapper>.navlogo{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+nav>.navwrapper>.navright{
+    text-decoration: none;
+    padding: 10px ;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    text-transform: capitalize;
+}
+/* navbar end here ========================== */
+
+
+
+
+/* banner start here ========================= */
+/* banner end here ========================= */
+
+
+/* work start here ========================== */
+/* work end here ========================== */
+
+/* video start here======================== */
+/* video end here======================== */
+
+
+/* target start here======================== */
+/* target end here==================== */
+
+
+/* next target  start here===============*/
+/* next target  end here===============*/
+
+
+/* support start here=============== */
+/* support end here=============== */
+
+
+/* footer start here =================== */
+/* footer end here===================== */
