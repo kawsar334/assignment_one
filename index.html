@@ -1,215 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio </title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        primary_bg: "#121212",
+                        orange: '#ee8f12'
+                    },
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(90.21deg, #ee8f12 -5.91%, #f86300 111.58%)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .Manrope {
+            font-family: "Manrope", sans-serif;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-primary_bg Manrope h-auto  text-[white]">
 
-    <main>
-        <!-- navbar start -->
-        <nav>
-            <div class="navwrapper ">
-                <a href="#home" class="navlogo " >kawsar.</a>
-                <a href="./assets/Group 3.png" download="./assets/Group 3.png" class="navright">Download resume</a>
-            </div>
-        </nav>
-        <!-- navbar end ------- -->
-
-        <!-- banner start ------- -->
-        <section class="banner" id="home">
-            <div class="bannercontents">
-                <img src="./assets/Group.png" alt="Loading image..." class="bannerimg">
-                <h1 class="bannerheader ">In the near future, I hope to become a <br>fullstack Developer.</h1>
-
-                <p class="bannerpara">Responsive web development, using html, css ,and will learn javascript and react
-                    js , </p>
-                <a href="#contact" class="btn bannerbtn">Contact with me </a>
-            </div>
-        </section>
-        <!-- banner end ------- -->
-
-        <!-- work section start ------- -->
-        <section class="work">
-            <div class="workwrapper">
-                <div class="worktop">
-                    <h1 class="work_header">why i am Learning web development ?</h1>
-                    <p class="work_para">I love coding , responsive web design ,user friendly web design. <br>fullstack
-                        web development </p>
+    <header class="bg-primary_bg">
+        <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[rgba(0,0,0,0.4)] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
                 </div>
-                <div class="workbottom">
-                    <div class="work_items">
-                        <div class="work_item">
-                            <div class="work_item_contents">
-                                <h2 class="work_item_header">Bulding Responsibe portfolio design .</h2>
-                                <p class="work_item_para">communication between web application's frontend !
-                                </p>
-                                <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                                    class="work_link">Learn More</a>
-                            </div>
-                            <img src="./assets/Layer_1.png" alt="" class="workimg">
+            </div>
+            <div class="navbar-center">
+                <a href="#intro" class="text-xl capitalize">Kawsar firoz</a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- navbar end here -->
+        <!-- banner section start here -->
+        <section class="mt-[50px] ">
+            <div class="hero bg-transparent min-h-screen">
+                <div class="hero-content flex-col-reverse lg:flex-row-reverse ">
+                    <!-- <img src="https://stupendous-raindrop-080f10.netlify.app/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg"
+                        class="max-w-sm  rounded-lg shadow-2xl bg-transparent " /> -->
+                    <!-- <img src="./assets/hero.jpg" alt="" class="max-w-sm  rounded-lg shadow-2xl bg-transparent " > -->
+                    <img src="./assets/hero1.png" alt="" class="max-w-sm  rounded-lg shadow-2xl bg-transparent ">
+                    <div>
+                        <div>
+                            <h1 class="text-5xl font-semibold ">Hi! I'm kawsar firoz</h1>
+                            <h1 class="text-5xl font-bold text-[#ee8f12]" id="typewriter"></h1>
                         </div>
-                        <div class="work_item work_item_center">
-                            <img src="./assets/Group 3.png" alt="" class="workimg">
-                            <div class="work_item_contents">
-                                <h2 class="work_item_header">Buld mobile application .</h2>
-                                <p class="work_item_para">communication between web application's frontend and backend !
-                                </p>
-                                <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                                    class="work_link">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="work_item">
-                            <div class="work_item_contents">
-                                <h2 class="work_item_header">Bulding intaractve user friendly web design .</h2>
-                                <p class="work_item_para">communication between web application's frontend and backend !
-                                </p>
-                                <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                                    class="work_link">Learn More</a>
-                            </div>
-                            <img src="./assets/Group 4.png" alt="" class="workimg">
-                        </div>
+                        <p class="py-6 w-[90%] md:w-[70%]">
+                            I am a self-motivated and hard-working web developer with knowledge in React, Node,
+                            Express.js, MongoDB, JavaScript,
+                            HTML, CSS, and responsive web development. I am looking for a challenging position where I
+                            can showcase my skills and
+                            contribute to the organization's growth.
+                        </p>
+                        <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">Download
+                            Resume</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- work section end ------- -->
-
-        <!-- video section start ------- -->
-        <section class="video_container">
-            <h1 class="video_header">My Inspirations.</h1>
-            <p class="video_para">My inspirations for learning web development include creating digital experiences ,
-                tech innovation and solving real world problems through coding. <b>Please click on this video below</b>
-                .</p>
-
-            <video src="./assets/v.mp4" controls class="video"></video>
 
         </section>
-        <!-- video section end ------- -->
+        <!-- banner section end here -->
+    </header>
+    <!-- skill -->
+    <section class="container  p-[20px] flex flex-col justify-center items-center m-auto h-max   w-full py-[100px]">
 
-        <!-- target section start ------- -->
-        <section class="target">
-            <h1 class="target_h">MY Current Target </h1>
-            <p class="target_p">my next target lern these technologies.</p>
-            <div class="target_items">
-                <div class="target_item" style="background-color: rgba(255, 76, 30, 0.05);">
-                    <img class="target_img" src="./assets/html.png" alt="">
-                    <h3 class="target_header">Html</h3>
-                    <p class="target_para">i will learn Html5 from programming hero course.</p>
-                    <a class="target_link" href="https://www.w3schools.com/html/default.asp" target="_blank">Learn
-                        more</a>
+        <div class="my-7">
+            <h1 class="text-4xl ">My <span class="text-orange">Skills</span></h1>
+            <p>Here is my skills to represent my Expertise</p>
+        </div>
+        <div class=" flex flex-wrap  gap-10  bg-[] w-[100%] md:w-[60%] ">
+            <!-- ************* -->
+            <div class="flex flex-wrap gap-10">
+                <!-- HTML Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-orange-500" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">HTML</p>
                 </div>
-                <div class="target_item" style="background-color: rgba(0, 76, 232, 0.05);">
-                    <img class="target_img" src="./assets/css.png" alt="">
-                    <h3 class="target_header">css</h3>
-                    <p class="target_para">i will learn CSS from programming hero courses.</p>
-                    <a class="target_link" href="https://www.w3schools.com/html/default.asp" target="_blank">Learn
-                        more</a>
+
+                <!-- CSS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-blue-500" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">CSS</p>
                 </div>
-                <div class="target_item" style="background-color: rgba(255, 223, 0, 0.05);">
-                    <img class="target_img" src="./assets/js.png" alt="">
-                    <h3 class="target_header">Javascript</h3>
-                    <p class="target_para">i will learn javascript from programming hero .</p>
-                    <a class="target_link" href="https://www.w3schools.com/html/default.asp" target="_blank">Learn
-                        more</a>
+
+                <!-- JavaScript Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-yellow-400" stroke-dasharray="70, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">JavaScript</p>
+                </div>
+
+                <!-- ReactJS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-cyan-500" stroke-dasharray="80, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">80%</span>
+                    <p class="absolute bottom-[-20px] capitalize">ReactJS</p>
+                </div>
+
+                <!-- Express.js Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-green-500" stroke-dasharray="60, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">60%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Express.js</p>
+                </div>
+
+                <!-- MongoDB Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-green-600" stroke-dasharray="50, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-20px] capitalize">MongoDB</p>
+                </div>
+
+                <!-- PHP Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke="currentColor" />
+                        <path class="text-purple-500" stroke-dasharray="40, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">40%</span>
+                    <p class="absolute bottom-[-20px] capitalize">PHP</p>
+                </div>
+                <!-- Tailwind CSS Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-teal-500" stroke-dasharray="70, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">70%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Tailwind</p>
+                </div>
+
+                <!-- React Native Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-cyan-600" stroke-dasharray="50, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-40px] right-0 capitalize bg-[]">React Native</p>
+                </div>
+
+                <!-- Laravel Progress -->
+                <div class="relative flex items-center justify-center w-20 h-20">
+                    <svg class="absolute w-full h-full" viewBox="0 0 36 36">
+                        <path class="text-gray-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"
+                            stroke="currentColor" />
+                        <path class="text-red-600" stroke-dasharray="50, 100" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3" stroke-linecap="round"
+                            stroke="currentColor" />
+                    </svg>
+                    <span class="absolute text-lg font-bold text-gray-700">50%</span>
+                    <p class="absolute bottom-[-20px] capitalize">Laravel</p>
+                </div>
+
+
+            </div>
+            <!-- ********** -->
+    </section>
+    <!-- skill -->
+
+
+    <!-- services -->
+    <section class="container w-[100vw]  m-auto flex flex-col justify-center items-center gap-10 py-10">
+        <h1 class="text-4xl capitalize">my services</h1>
+        <div class="flex justify-center items-center gap-5 m-auto flex-wrap">
+            <div
+                class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px]  ">
+                <div class="card-body cursor-pointer  text-[white]">
+
+                    <p class="text-5xl">&lt;/&gt;</p>
+                    <h2 class="card-title">Web Development!</h2>
+                    <p>I will make a clean, unique, and professional-looking website. My design must be responsive on
+                        all
+                        devices, pixel
+                        perfect and clean coding. I hope, I can help you to make an awesome website for your business.
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- target section end ------- -->
-
-        <!-- next target section start ------- -->
-        <section class="next">
-            <h1 class="next_header">My Next Target</h1>
-            <p class="next_para">My Next is Learning fullstack web development.with react js , angular , nodejs,
-                mongodb, express,nextjs ,Sql</p>
-            <div class="next_items">
-                <div class="nextitem">
-                    <img src="./assets/react.png" alt="" class="nextimg">
-                    <div class="nextitem_contents">
-                        <h2 class="next_item_header">React js</h2>
-                        <p class="next_item_para">react js is a frontend js library for building resusable UI/UX
-                            components. it released in 2013 </p>
-                        <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                            class="next_item_link">Learn more</a>
-                    </div>
+            <!--  -->
+            <div class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px]">
+                <div class="card-body cursor-pointer  text-[white]">
+                    <i class="fa-solid fa-computer text-5xl"></i>
+                    <h2 class="card-title">Responsive Design</h2>
+                    <p>I will provide you with excellent web design services. Your website will be loaded first and it
+                        will show perfectly on
+                        every device. I believe in providing the best experience, the best designs, and the best
+                        results.</p>
                 </div>
-                <div class="nextitem">
-                    <img src="./assets/nodejs.png" alt="" class="nextimg">
-                    <div class="nextitem_contents">
-                        <h2 class="next_item_header">Node js</h2>
-                        <p class="next_item_para">Node.js is a powerful JavaScript runtime built on Chrome's V8 engine,
-                            enabling server-side scripting. It excels in
-                            building scalable network applications with non-blocking, event-driven architecture,
-                            ensuring high performance. </p>
-                        <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                            class="next_item_link">Learn more</a>
-                    </div>
-                </div>
-                <div class="nextitem">
-                    <img src="./assets/mongodb.png" alt="" class="nextimg">
-                    <div class="nextitem_contents">
-                        <h2 class="next_item_header">mongodb</h2>
-                        <p class="next_item_para">MongoDB is a NoSQL database, known for its flexibility, scalability,
-                            and document-oriented storage, using JSON-like
-                            documents for data representation </p>
-                        <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                            class="next_item_link">Learn more</a>
-                    </div>
-                </div>
-
             </div>
+            <!--  -->
+            <div class="card bg-transparent text-primary-content hover:border-[white] w-96 border-orange border-[2px]">
+                <div class="card-body cursor-pointer  text-[white]">
+                    <p class="text-5xl">$</p>
+                    <h2 class="card-title my-3">Reasonable Cost!</h2>
+                    <p>I work closely with my clients on each project to create not only an amazing design that will
+                        help the business grow but
+                        to create a long-term relationship of trust and caring.</p>
+                </div>
+            </div>
+        </div>
 
-        </section>
-        <!-- next target section end ------- -->
-
-        <!-- contact section start ------- -->
-        <section class="contact" id="contact">
-            <h1>I need Support</h1>
-            <p>Let's collaborate us . enter your email and submit </p>
-            <form action="" class="contactform">
-                <input type="email" placeholder="suggest me Any feedback for me " class="contact_input">
-                <button class="submit_btn" type="submit">Submit </button>
-            </form>
-
-
-        </section>
-        <!-- contact section end ------- -->
+    </section>
+    <!-- services end  -->
 
 
+    <!-- projects -->
+    <h1>projects</h1>
+    <!-- projects -->
+    <!-- contact -->
+    <h1>contact</h1>
+    <!-- contact -->
+
+    <!-- footer -->
+
+    <footer class="flex justify-center items-center gap-5 flex-wrap bg-[#2b2929] w-full h-[200px] ">
+
+        <a href="https://wa.me/your-phone-number" target="_blank">
+            <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" target="_blank">
+            <i class="fab fa-twitter text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+        <a href="https://www.instagram.com/your-profile" target="_blank">
+            <i class="fab fa-instagram text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
 
 
-        <!-- footer start  -->
-        <footer>
-            <p class="footertext">An open commitement by kawsar firoz</p>
-            <ul class="footer_links">
-                <li>
+        <a href="https://www.facebook.com/your-profile" target="_blank">
+            <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
 
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/facebook.png" alt=""> </a>
-                </li>
-                <li>
-
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/github.png" alt=""> </a>
-                </li>
-                <li>
-
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/linkedin-icon 1.png" alt=""> </a>
-                </li>
-
-
-            </ul>
-        </footer>
-        <!-- footer end   -->
+        <a href="https://github.com/your-profile" target="_blank">
+            <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
 
 
 
-
-
-    </main>
+    </footer>
+    <!-- footer -->
 
 </body>
+<script>
+    const words = ["Hello, World!", "Welcome to my website!", "This is a typewriter effect."];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function type() {
+        currentWord = words[i];
+        if (isDeleting) {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+            j--;
+            if (j == 0) {
+                isDeleting = false;
+                i++;
+                if (i == words.length) {
+                    i = 0;
+                }
+            }
+        } else {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+            j++;
+            if (j == currentWord.length) {
+                isDeleting = true;
+            }
+        }
+        setTimeout(type, 100);
+    }
+
+    type();
+</script>
 
 </html>
