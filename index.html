@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,7 @@
 
 <body class="bg-primary_bg Manrope h-auto  text-[white]">
 
-    <header class="bg-primary_bg">
+    <header class="bg-primary_bg" id="intro">
         <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -55,12 +56,12 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-[rgba(0,0,0,0.4)] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-[black] rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a href="#intro">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#project">Portfolio</a></li>
                         <li><a href="#services">services</a></li>
                         <li><a href="#contact">contact</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,13 +69,8 @@
                 <a href="#intro" class="text-xl capitalize">Kawsar firoz</a>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
+                
+              
                 <button class="btn btn-ghost btn-circle">
                     <div class="indicator">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -95,11 +91,13 @@
                     <!-- <img src="https://stupendous-raindrop-080f10.netlify.app/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg"
                         class="max-w-sm  rounded-lg shadow-2xl bg-transparent " /> -->
                     <!-- <img src="./assets/hero.jpg" alt="" class="max-w-sm  rounded-lg shadow-2xl bg-transparent " > -->
-                    <img src="./assets/hero1.png" alt="" class="max-w-sm  rounded-lg shadow-2xl bg-transparent ">
+                    <img src="./assets/hero1.png" alt=""
+                        class="max-w-sm rounded-lg shadow-2xl bg-transparent animated-image">
                     <div>
                         <div>
-                            <h1 class="text-5xl font-semibold ">Hi! I'm kawsar firoz</h1>
-                            <h1 class="text-5xl font-bold text-[#ee8f12]" id="typewriter"></h1>
+                            <h1 class="text-3xl md:text-5xl font-semibold ">Hi! I'm kawsar firoz</h1>
+                            <h1 class=" w-full md:w-[60%] text-4xl md:text-5xl font-bold text-[#ee8f12]"
+                                id="typewriter"></h1>
                         </div>
                         <p class="py-6 w-[90%] md:w-[70%]">
                             I am a self-motivated and hard-working web developer with knowledge in React, Node,
@@ -118,7 +116,7 @@
         <!-- banner section end here -->
     </header>
     <!-- skill -->
-    <section class="container  p-[20px] flex flex-col justify-center items-center m-auto h-max   w-full py-[100px]">
+    <section id="skill" class="container  p-[20px] flex flex-col justify-center items-center m-auto h-max   w-full py-[100px]">
 
         <div class="my-7">
             <h1 class="text-4xl ">My <span class="text-orange">Skills</span></h1>
@@ -287,7 +285,7 @@
 
 
     <!-- services -->
-    <section class="container w-[100vw]  m-auto flex flex-col justify-center items-center gap-10 py-10">
+    <section id="services" class="container w-[100vw]  m-auto flex flex-col justify-center items-center gap-10 py-10">
         <h1 class="text-4xl capitalize">my services</h1>
         <div class="flex justify-center items-center gap-5 m-auto flex-wrap">
             <div
@@ -331,10 +329,91 @@
 
 
     <!-- projects -->
-    <h1>projects</h1>
+    <section class="flex flex-col gap-6 justify-center items-center" id="project">
+       <div>
+        <h1>project </h1>
+        <p>my all projects here</p>
+       </div>
+       <!--  -->
+       <div class="flex justify-center items-center flex-wrap gap-4">
+        <!--  -->
+        <div class="card bg-base-100 image-full w-[90%] md:w-[300px] shadow-xl capitalize" >
+          
+            <figure>
+                <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title capitalize">Responsive Html website design </h2>
+                <p class="text-white">Responsive design using <span class="text-orange">html</span>, css, js , and tailwind css ,</p>
+                <div class="card-actions justify-start">
+                    <a class="btn border-[lightgray] border-[1px] bg-transparent " href="./links/html.html">Details</a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="card bg-base-100 image-full w-[90%] md:w-[300px] shadow-xl capitalize">
+        
+            <figure>
+                <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title capitalize">React js UI/UX Design  </h2>
+                <p class="text-white">Responsive design using <strong class="text-orange">REACT JS</strong> React-router-dom, </p>
+                <div class="card-actions justify-start">
+                    <a class="btn border-[lightgray] border-[1px] bg-transparent " href="./links/react.html">Details</a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="card bg-base-100 image-full w-[90%] md:w-[300px] shadow-xl capitalize">
+        
+            <figure>
+                <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title capitalize">Fullstack projects </h2>
+                <p class="text-white text-[13px]">Fullstack projects  using React.js, node.js, express.js, mongodb,react-router-dom, redux, context-api, axios
+                </p>
+                <div class="card-actions justify-start">
+                    <a class="btn border-[lightgray] border-[1px] bg-transparent " href="./links/fullstack.html">Details</a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="card bg-base-100 image-full w-[90%] md:w-[300px] shadow-xl capitalize">
+        
+            <figure>
+                <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title capitalize">React Native UI/UX Design </h2>
+                <p class="text-white">Design for mobile apps using <strong class="text-orange">REACT Native</strong> 
+                </p>
+                <div class="card-actions justify-start">
+                    <a class="btn border-[lightgray] border-[1px] bg-transparent " href="./links/native.html">Details</a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        
+        
+       
+        
+        
+
+       </div>
+
+   
+
+    </section>
     <!-- projects -->
     <!-- contact -->
-    <h1>contact</h1>
+    <section>
+        <h1>contact form</h1>
+    </section>
     <!-- contact -->
 
     <!-- footer -->
@@ -362,15 +441,12 @@
         <a href="https://github.com/your-profile" target="_blank">
             <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
         </a>
-
-
-
     </footer>
     <!-- footer -->
 
 </body>
 <script>
-    const words = ["Frontend web developer!", "React js ,!", "Html, css, and vannilla js","Context Api , redux, react-router-dom","Node.js,express.js,mongodb,"];
+    const words = ["Frontend web developer!", "React js ,!", "Html, css, and vannilla js", "Context Api , redux, react-router-dom", "Node.js,express.js,", "mongodb,"];
     let i = 0;
     let j = 0;
     let currentWord = "";

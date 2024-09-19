@@ -1,0 +1,80 @@
+
+
+
+ .animated-image {
+     position: relative;
+     animation: updown 2s ease-in-out infinite;
+ }
+
+ @keyframes updown {
+     0% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-20px);
+         /* Adjust the distance as per your need */
+     }
+
+     100% {
+         transform: translateY(0);
+     }
+ }
+
+
+ /*  */
+
+  .card {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      cursor: pointer;
+
+  }
+        .card::after{
+            content: "";
+                position: absolute;
+                width: 100%;
+                    height: 100%;
+                    /* background-color: rgba(0, 0, 0, 0.1); */
+                }
+                
+  /* Overlay initially hidden above the card */
+  .card::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Dark overlay */
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      transition: top 0.5s ease;
+      /* Smooth slide down */
+  }
+
+  .card:hover::before {
+      top: 0;
+      /* Slide overlay into view */
+  }
+
+  .card-body {
+      position: relative;
+      z-index: 2;
+      color: white;
+      /* Text color over dark overlay */
+  }
+
+  figure img {
+      transition: transform 0.5s ease;
+      /* Smooth zoom effect */
+  }
+
+  .card:hover figure img {
+      transform: scale(1.1);
+      /* Zoom in on hover */
+  }
+  .cart_img{
+    opacity: 0.1;
+  }

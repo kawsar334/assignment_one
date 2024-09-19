@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React js project_lists </title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        primary_bg: "#121212",
+                        orange: '#ee8f12'
+                    },
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(90.21deg, #ee8f12 -5.91%, #f86300 111.58%)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .Manrope {
+            font-family: "Manrope", sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body class="bg-primary_bg Manrope h-auto  text-[white]">
+
+    <header class="bg-primary_bg">
+        <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[black] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a href="#intro" class="text-xl capitalize">Kawsar firoz</a>
+            </div>
+            <div class="navbar-end">
+
+
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- navbar end here -->
+    </header>
+
+    <main>
+        <h1>React  projects</h1>
+    </main>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="flex justify-center items-center gap-5 flex-wrap bg-[#2b2929] w-full h-[200px] ">
+
+        <a href="https://wa.me/your-phone-number" target="_blank">
+            <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" target="_blank">
+            <i class="fab fa-twitter text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+        <a href="https://www.instagram.com/your-profile" target="_blank">
+            <i class="fab fa-instagram text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+
+
+        <a href="https://www.facebook.com/your-profile" target="_blank">
+            <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+
+        <a href="https://github.com/your-profile" target="_blank">
+            <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
+        </a>
+    </footer>
+    <!-- footer -->
+
+</body>
+
+
+</html>
