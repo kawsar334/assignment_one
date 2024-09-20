@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html project_lists </title>
+    <title>fullstack project_lists </title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -18,6 +18,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -86,13 +87,84 @@
         <!-- navbar end here -->
     </header>
 
+ <section class="bg-[#191e24] flex flex-col gap-6 justify-center items-center py-[40px] darkmode" id="project">
+        <div>
+            <h1>project </h1>
+            <p>my all projects here</p>
+        </div>
+        <!--  -->
+        <div class="flex justify-center items-center flex-wrap gap-4">
+            <!--  -->
+            <div class="card cart_bg image-full w-[90%] md:w-[300px] shadow-xl capitalize">
 
+                <figure>
+                    <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title capitalize">Responsive Html website design </h2>
+                    <p class="text-white">Responsive design using <span class="text-orange">html</span>, css, js , and
+                        tailwind css ,</p>
+                    <div class="card-actions justify-start">
+                        <a class="btn border-[lightgray] border-[1px] bg-transparent "
+                            href="html.html">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="card cart_bg image-full w-[90%] md:w-[300px] shadow-xl capitalize">
 
-<main>
-    <h1>Html projects</h1>
+                <figure>
+                    <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title capitalize">React js UI/UX Design </h2>
+                    <p class="text-white">Responsive design using <strong class="text-orange">REACT JS</strong>
+                        React-router-dom, </p>
+                    <div class="card-actions justify-start">
+                        <a class="btn border-[lightgray] border-[1px] bg-transparent "
+                            href="react.html">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="card cart_bg image-full w-[90%] md:w-[300px] shadow-xl capitalize">
 
-    <div id="fullstack-container"></div>
-</main>
+                <figure>
+                    <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title capitalize">Fullstack projects </h2>
+                    <p class="text-white text-[13px]">Fullstack projects using React.js, node.js, express.js,
+                        mongodb,react-router-dom, redux, context-api, axios
+                    </p>
+                    <div class="card-actions justify-start">
+                        <a class="btn border-[lightgray] border-[1px] bg-transparent "
+                            href="fullstack.html">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="card cart_bg image-full w-[90%] md:w-[300px] shadow-xl capitalize">
+
+                <figure>
+                    <img src="./assets/hero1.png" alt="Shoes" class="cart_img" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title capitalize">React Native UI/UX Design </h2>
+                    <p class="text-white">Design for mobile apps using <strong class="text-orange">REACT Native</strong>
+                    </p>
+                    <div class="card-actions justify-start">
+                        <a class="btn border-[lightgray] border-[1px] bg-transparent "
+                            href="native.html">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
 
 
 
@@ -123,8 +195,9 @@
         </a>
     </footer>
     <!-- footer -->
-<script type="module" src="../js/html.js"></script>
+
 </body>
+
 
 
 </html>

@@ -1,6 +1,6 @@
 
 
-  export const  frontend = [
+export const frontend = [
     {
         id: 1,
         title: "Food ordering app Design",
@@ -11,7 +11,7 @@
         desc: "Responsive Food ordering UI/ux design using React.js functional component react-router-dom , Sass,react infinit-slide-carusel ",
         img2: "/imgs/pizza.png"
     },
-  
+
     {
         id: 2,
         title: "Ecommerce ui Design",
@@ -42,7 +42,7 @@
         desc: "fiverr clone using react js functioanal component, Sass,infinite-react-carousel, react -router-dom , (computer screen) ",
         img2: "/imgs/fiver.png"
     },
-   
+
     {
         id: 5,
         title: "Blog ui design ",
@@ -109,7 +109,7 @@
 
 ];
 
- export const  fullstack = [
+export const fullstack = [
     {
         id: 1,
         title: " Mern  Social Media App",
@@ -134,7 +134,6 @@
         img: "https://play-lh.googleusercontent.com/eJuvWSnbPwEWAQCYwl8i9nPJXRzTv94JSYGGrKIu0qeuG_5wgYtb982-2F_jOGtIytY",
         demo: "",
         github: "",
-        desc:"loading...",
         img2: "/imgs/booking.png",
     },
 
@@ -156,7 +155,7 @@
         desc: "Fullstack Video sharing  app . using react js functional components styled-component, (only for computer screen ) , express.js MongoDB JWT Cookie Authentication. and User Verification (Authorization),after Login user can upload video , like comment , subscribe channel ,  ",
         img2: "/imgs/youtube.png",
     },
-    ,
+    
     {
         id: 6,
         title: "fullstack NetLix app",
@@ -167,7 +166,7 @@
     },
 ];
 
- export const  mobilePortfolio = [
+export const mobilePortfolio = [
     {
         id: 1,
         title: "Mobile Social Media App",
@@ -177,7 +176,7 @@
 
 ];
 
- export const  designPortfolio = [
+export const designPortfolio = [
     {
         id: 1,
         title: "Design Social Media App",
@@ -216,7 +215,7 @@
     },
 ];
 
- export const  contentPortfolio = [
+export const contentPortfolio = [
     {
         id: 1,
         title: "Content Social Media App",
@@ -256,3 +255,31 @@
 ];
 
 
+export const htmlTamplate =[
+    {
+        id: 1,
+        title: "Varsatile ui design ",
+        desc:"resoponsive versatile UI design using pure HTML css, js",
+        demo:"https://kawsar334.github.io/versatile-ui_design-/",
+        img:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    },
+    {
+        id: 2,
+        title: "Daisy UI ",
+        desc: "tailwind css ui design , fully resoponsive",
+        demo: "https://kawsar334.github.io/daisy_ui_html/",
+        img:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+
+    },
+    {
+        id: 2,
+        title: "Daisy UI ",
+        desc: "tailwind css ui design , fully resoponsive",
+        demo: "https://kawsar334.github.io/daisy_ui_html/",
+        img:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+
+    },
+]
