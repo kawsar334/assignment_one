@@ -32,8 +32,8 @@
   .card {
       position: relative;
       overflow: hidden;
-      color: white;
       cursor: pointer;
+     
      
 
   }
@@ -67,7 +67,7 @@
   .card-body {
       position: relative;
       z-index: 2;
-      color: white;
+      color: black;
       /* Text color over dark overlay */
   }
 

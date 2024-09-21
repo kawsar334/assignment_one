@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio </title>
-    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,9 +47,8 @@
     </style>
 </head>
 
-<body class="bg-primary_bg Manrope h-auto  text-[white] darkmode">
-
-    <header class="bg-primary_bg" id="intro darkmode">
+<body class="bg-[#121212] Manrope h-auto  text-[white] darkmode">
+    <header class="bg-primary_bg darkmode" id="intro ">
         <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -71,7 +71,7 @@
             </div>
             <div class="navbar-center">
                 <!-- <a href="#intro" class="text-xl capitalize">Kawsar firoz</a> -->
-               
+
                 <button class="btn " id="mode_btn">dark/light</button>
             </div>
             <div class="navbar-end">
@@ -114,15 +114,16 @@
                             can showcase my skills and
                             contribute to the organization's growth.
                         </p>
-                      <div class="flex flex-col md:flex-row gap-3 w-[90%]   justify-start items-start">
-                          <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">See my works</a>
-                        <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">Download
-                            Resume</a>
-                      </div>
+                        <div class="flex flex-col md:flex-row gap-3 w-[90%]   justify-start items-start">
+                            <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">See my
+                                works</a>
+                            <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]"
+                                href="#project">Download
+                                Resume</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- banner section end here -->
     </header>
@@ -292,35 +293,10 @@
 
             </div>
             <!-- ********** -->
-            <!-- <div class="w-[90%] bg-[red] p-5 flex justify-start items-center flex-wrap gap-3">
-                <div class="border-b   ">
-                    <div class="flex justify-center items-center gap-3 flex-wrap">
-                        <span class="text-3xl">Basic:</span>
-                        <button class="btn btn-sm">Next.js</button>
-                        <button class="btn btn-sm">python</button>
-                      
-                        <button class="btn btn-sm">redux</button>
-                        <button class="btn btn-sm">redux Toolkit</button>
-                        <button class="btn btn-sm">context-api</button>
-                        <button class="btn btn-sm">Sql</button>
-                        <button class="btn btn-sm bg-blue-500 text-white hover:bg-blue-700">Next.js</button>
-
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <span class="text-3xl">Tools:</span>
-                    <div class="flex justify-center items-center gap-3 flex-wrap">
-                        <button class="btn btn-sm">vs code</button>
-                        <button class="btn btn-sm">git</button>
-                        <button class="btn btn-sm">Npm</button>
-                        <button class="btn btn-sm">Netlify</button>
-                    </div>
-                </div>
-            </div> -->
+          
             <div class="w-[90%] bg-transparent p-5 flex justify-start items-center flex-wrap gap-3 darkmode">
                 <div class="">
                     <div class="flex justify-center items-center gap-3 flex-wrap">
-                        <!-- <span class="text-3xl">Basic:</span> -->
                         <button class="btn btn-sm bg-blue-500 text-white hover:bg-blue-700">Next.js</button>
                         <button class="btn btn-sm bg-green-500 text-white hover:bg-green-700">Python</button>
                         <button class="btn btn-sm bg-red-500 text-white hover:bg-red-700">Redux</button>
@@ -333,7 +309,6 @@
                     </div>
                 </div>
                 <div class="flex gap-2">
-                    <!-- <span class="text-3xl">Tools:</span> -->
                     <div class="flex justify-center items-center gap-3 flex-wrap">
                         <button class="btn btn-sm bg-gray-500 text-white hover:bg-gray-700">VS Code</button>
                         <button class="btn btn-sm bg-green-600 text-white hover:bg-green-800">Git</button>
@@ -348,7 +323,8 @@
 
 
     <!-- services -->
-    <section id="services" class="container w-[100vw]  m-auto flex flex-col justify-center items-center gap-10 py-10 darkmode">
+    <section id="services"
+        class="container  m-auto flex flex-col justify-center items-center gap-10 py-10 darkmode w-[95%]">
         <h1 class="text-4xl capitalize">my services</h1>
         <div class="flex justify-center items-center gap-5 m-auto flex-wrap">
             <div
@@ -389,54 +365,55 @@
 
     </section>
     <!-- services end  -->
-    
+
 
 
     <!-- projects -->
-   <section class="bg-[black] py-10" id="project">
-    <div class="w-[80%] m-auto ">
-    
-        <div role="tablist" class="tabs tabs-lifted ">
-            <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Design" />
-            <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 ">
-    
-                <div id="html_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
-    
-            </div>
-    
-            <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="frontend " checked="checked" />
-            <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    
-                <div id="frontend_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
-            </div>
-    
-    
-            <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="fullstack" checked="checked" />
-            <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    
-                <div id="fullstack_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
-            </div>
-    
-            <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="React Native" />
-            <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-                <div id="desing_conainer" class="flex  flex-wrap justify-center items-center gap-5">
-    
+    <div class="bg-[#121212] text-[white] py-10 flex justify-center items-center flex-col gap-7" id="project">
+        <div>
+            <h1 class="text-4xl capitalize ">project </h1>
+            <p class="text-2xl capitalize my-4">my all projects here</p>
+        </div>
+        <div class="w-[100%] md:w-[80%] lg:w-[80%] m-auto ">
+            <div role="tablist" class="tabs tabs-lifted ">
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="Design" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
+
+                    <div id="html_content" class="flex  flex-wrap justify-center items-center gap-5  "></div>
+
                 </div>
-    
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="frontend " checked="checked" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
+
+                    <div id="frontend_content" class="flex  flex-wrap justify-center items-center gap-5  w-full"></div>
+                </div>
+
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="fullstack" checked="checked" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
+
+                    <div id="fullstack_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
+                </div>
+
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="React Native" />
+                <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
+                    <div id="design_conainer" class="flex  flex-wrap justify-center items-center gap-5">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-   </section>
-   
+
     <!-- projects -->
-     <!-- about me -->
-    <div class="w-full bg-gray-100 py-10 bg-primary_bg">
+    <!-- about me -->
+    <div class="w-full  py-10 bg-primary_bg">
         <div class="container mx-auto">
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-bold">About Me</h2>
                 <p class="text-lg text-gray-600">A brief introduction about myself</p>
             </div>
-    
+
             <div class="flex justify-center items-center flex-wrap gap-8">
                 <!-- Card 1 -->
                 <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
@@ -450,7 +427,7 @@
                         JavaScript.
                     </p>
                 </div>
-    
+
                 <!-- Card 2 -->
                 <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
                     <div class="flex justify-center mb-4">
@@ -463,7 +440,7 @@
                         applications.
                     </p>
                 </div>
-    
+
                 <!-- Card 3 -->
                 <div class="card w-80 bg-white shadow-lg rounded-lg p-6">
                     <div class="flex justify-center mb-4">
@@ -480,33 +457,33 @@
         </div>
     </div>
 
-     <!-- about me -->
-        <!-- testimonial -->
-        <section class="bg-transparent py-6 bg-primary_bg darkmode ">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <p class="text-gray-700 mb-4">"Kawsar Firoz is an exceptional full-stack developer. His expertise in
-                            React.js and the MERN stack is evident in every project he delivers."</p>
-                        <h3 class="text-lg font-semibold">Client Name</h3>
-                        <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <p class="text-gray-700 mb-4">"Working with Kawsar was a pleasure! His attention to detail and
-                            creative
-                            solutions truly set him apart."</p>
-                        <h3 class="text-lg font-semibold">Client Name</h3>
-                        <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
-                    </div>
-                    <!-- Add more testimonials as needed -->
+    <!-- about me -->
+    <!-- testimonial -->
+    <section class="bg-transparent py-6 bg-primary_bg darkmode ">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Kawsar Firoz is an exceptional full-stack developer. His expertise in
+                        React.js and the MERN stack is evident in every project he delivers."</p>
+                    <h3 class="text-lg font-semibold">Client Name</h3>
+                    <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
                 </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Working with Kawsar was a pleasure! His attention to detail and
+                        creative
+                        solutions truly set him apart."</p>
+                    <h3 class="text-lg font-semibold">Client Name</h3>
+                    <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
+                </div>
+                <!-- Add more testimonials as needed -->
             </div>
-        </section>
-        <!-- testimonial -->
+        </div>
+    </section>
+    <!-- testimonial -->
 
 
     <!-- contact -->
-    <section id="contact" >
+    <section id="contact">
         <div class="hero bg-[#191e24] min-h-screen darkmode">
             <div class="hero-content flex-col lg:flex-row  w-full md:w-[80%]">
                 <div>
@@ -616,7 +593,7 @@
 
 
     <!-- footer -->
-  
+
     <script>
         const words = ["Frontend web developer!", "React js ,!", "Html, css, and vannilla js", "Context Api , redux, react-router-dom", "Node.js,express.js,", "mongodb,"];
         let i = 0;
