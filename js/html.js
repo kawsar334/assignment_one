@@ -33,7 +33,7 @@ htmlTamplate.forEach(item => {
       </div>
     </div>
   `;
-    itemDiv.classList.add("flex", "justify-center", "items-center", "bg-[teal]", "card", "bg-base-100", "image-full",);
+    itemDiv.classList.add("flex", "justify-center", "items-center", "card", "bg-base-100", "image-full",);
     container.appendChild(itemDiv);
 });
 

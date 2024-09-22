@@ -48,7 +48,7 @@
 </head>
 
 <body class="bg-[#121212] Manrope h-auto  text-[white] darkmode">
-    <header class="bg-primary_bg darkmode" id="intro ">
+    <header class="bg-primary_bg darkmode" id="intro">
         <div class="navbar bg-base-100 bg-[rgba(0,0,0,0.4)] sticky top-0 left-0 z-20">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -72,7 +72,9 @@
             <div class="navbar-center">
                 <!-- <a href="#intro" class="text-xl capitalize">Kawsar firoz</a> -->
 
-                <button class="btn " id="mode_btn">dark/light</button>
+                <button class="btn " id="mode_btn">Light/dark</button>
+                <button class="btn mx-3" id="mode_btn">English</button>
+
             </div>
             <div class="navbar-end">
 
@@ -85,7 +87,10 @@
                                 d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                         </svg>
                         <span class="badge badge-xs badge-primary indicator-item"></span> -->
-                        <a href="#" title="Download Resume"> Resume</a>
+                        <a href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/edit"
+                            target="_blank" title="View Resume"> Resume</a>
+
+
                     </div>
                 </button>
             </div>
@@ -118,7 +123,8 @@
                             <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]" href="#project">See my
                                 works</a>
                             <a class="btn border-[none] text-2xl bg-custom-gradient text-[white]"
-                                href="#project">Download
+                                href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/export?format=pdf"
+                                title="Download Resume">Download
                                 Resume</a>
                         </div>
                     </div>
@@ -293,7 +299,7 @@
 
             </div>
             <!-- ********** -->
-          
+
             <div class="w-[90%] bg-transparent p-5 flex justify-start items-center flex-wrap gap-3 darkmode">
                 <div class="">
                     <div class="flex justify-center items-center gap-3 flex-wrap">
@@ -376,27 +382,31 @@
         </div>
         <div class="w-[100%] md:w-[80%] lg:w-[80%] m-auto ">
             <div role="tablist" class="tabs tabs-lifted ">
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="Design" />
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="Design" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
 
                     <div id="html_content" class="flex  flex-wrap justify-center items-center gap-5  "></div>
 
                 </div>
 
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="frontend " checked="checked" />
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="frontend " checked="checked" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212] ">
 
                     <div id="frontend_content" class="flex  flex-wrap justify-center items-center gap-5  w-full"></div>
                 </div>
 
 
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="fullstack" checked="checked" />
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="fullstack" checked="checked" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
 
                     <div id="fullstack_content" class="flex  flex-wrap justify-center items-center gap-5"></div>
                 </div>
 
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize" aria-label="React Native" />
+                <input type="radio" name="my_tabs_2" role="tab" class="tab text-[gray] capitalize"
+                    aria-label="React Native" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-[#121212]">
                     <div id="design_conainer" class="flex  flex-wrap justify-center items-center gap-5">
                     </div>
@@ -465,14 +475,14 @@
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <p class="text-gray-700 mb-4">"Kawsar Firoz is an exceptional full-stack developer. His expertise in
                         React.js and the MERN stack is evident in every project he delivers."</p>
-                    <h3 class="text-lg font-semibold">Client Name</h3>
+                    <!-- <h3 class="text-lg font-semibold">Client Name</h3> -->
                     <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <p class="text-gray-700 mb-4">"Working with Kawsar was a pleasure! His attention to detail and
                         creative
                         solutions truly set him apart."</p>
-                    <h3 class="text-lg font-semibold">Client Name</h3>
+                    <!-- <h3 class="text-lg font-semibold">Client Name</h3> -->
                     <!-- <p class="text-sm text-gray-500">Position, Company</p> -->
                 </div>
                 <!-- Add more testimonials as needed -->
@@ -488,34 +498,41 @@
             <div class="hero-content flex-col lg:flex-row  w-full md:w-[80%]">
                 <div>
                     <div class=" border mb-[20px] px-3 py-1 flex justify-start rounded items-center gap-3 ">
-                        <span><i class="fas fa-envelope"></i></span> <a href="">kawsarfiroz11@gmail.com</a>
+                        <span><i class="fas fa-envelope"></i></span> <a href="mailto:kawsarfiroz11@gmail.com">kawsarfiroz11@gmail.com</a>
 
 
                     </div>
                     <div class=" border mb-[20px] px-3 py-1 flex justify-start rounded items-center  gap-3">
 
                         <i class="fas fa-phone"></i>
-                        <a href="">+966509325731</a>
+                        <a href="https://wa.me/966509325731">+966509325731</a>
 
                     </div>
-                    <div class=" border mb-[20px] px-3 py-1 flex justify-start rounded items-center  gap-3">
-                        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
-                            <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer "></i>
+                  
+                    <div class="border mb-[20px] px-3 py-1 flex justify-start rounded items-center gap-3">
+                        <a href="https://www.linkedin.com/in/kawsar-firoz-a140b9237/" target="_blank">
+                            <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer"></i>
                         </a>
-
-
-                        <a href="https://www.facebook.com/your-profile" target="_blank">
-                            <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer "></i>
+                    
+                        <a href="https://www.facebook.com/people/Kawsar-Firoz/pfbid02uZGLYoyYZbJx6HSc7QsFwgY8QLq9BB1xzyqtns8G2A6UuBS7Fca35Mw9sWGUfcwTl/" target="_blank">
+                            <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer"></i>
                         </a>
-
-                        <a href="https://github.com/your-profile" target="_blank">
-                            <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
+                    
+                        <a href="https://github.com/kawsar334" target="_blank">
+                            <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer"></i>
                         </a>
+                    
                         <a href="https://wa.me/966509325731" target="_blank">
-                            <i class="fab fa-whatsapp text-3xl rounded-[30px] "></i>
+                            <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
                         </a>
-
+                    
+                        <a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank">
+                            <i class="fas fa-globe text-3xl rounded-[30px] cursor-pointer"></i> <!-- Portfolio 1 -->
+                        </a>
+                    
+                      
                     </div>
+
                 </div>
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                     <form class="card-body">
@@ -557,41 +574,48 @@
                     <li class="my-3"><a href="./links/projects.html" class="text-2xl ">project </a></li>
                     <li class="my-3"><a href="#contact" class="text-2xl ">contact </a></li>
                     <li class="my-3"><a href="#about" class="text-2xl ">about </a></li>
-                    <li class="my-3"><a href="#about" class="text-2xl ">+966509325731 </a></li>
-
+                    <li class="my-3">
+                        <a href="tel:+966509325731" class="text-2xl">+966509325731</a>
+                    </li>
+                    <li><a href="https://docs.google.com/document/d/1lDcnMOuXtyzD710WU9JVJu6ZbNUPkHO2OlxsQGKs0hc/export?format=pdf"
+                            title="Download Resume" download>Download cv</a>
+                    </li>
+                    <li class="my-3"><a href="https://portfolio-c34cf.firebaseapp.com/" target="_blank"
+                            class="text-[14px] text-[#121244] border rounded py-2 px-3 hover:bg-[white] hover:text-[black]">Multiple language portfolio </a>
+                    </li>
 
                 </ul>
             </div>
             <div class="flex gap-5 justify-center items-center   my-auto">
-                <a href="https://wa.me/your-phone-number" target="_blank">
+                <a href="https://wa.me/+966509325731" target="_blank">
                     <i class="fab fa-whatsapp text-3xl rounded-[30px]"></i>
                 </a>
-                <a href="https://twitter.com/your-profile" target="_blank">
+                <a href="#" target="_blank">
                     <i class="fab fa-twitter text-3xl rounded-[30px] cursor-pointer "></i>
                 </a>
-                <a href="https://www.instagram.com/your-profile" target="_blank">
+                <a href="#">
                     <i class="fab fa-instagram text-3xl rounded-[30px] cursor-pointer "></i>
                 </a>
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <a href="https://www.linkedin.com/in/kawsar-firoz-a140b9237/" target="_blank">
                     <i class="fab fa-linkedin text-3xl rounded-[30px] cursor-pointer "></i>
                 </a>
 
 
-                <a href="https://www.facebook.com/your-profile" target="_blank">
+                <a href="https://www.facebook.com/people/Kawsar-Firoz/pfbid02uZGLYoyYZbJx6HSc7QsFwgY8QLq9BB1xzyqtns8G2A6UuBS7Fca35Mw9sWGUfcwTl/"
+                    target="_blank">
                     <i class="fab fa-facebook text-3xl rounded-[30px] cursor-pointer "></i>
                 </a>
 
-                <a href="https://github.com/your-profile" target="_blank">
+                <a href="https://github.com/kawsar334" target="_blank">
                     <i class="fab fa-github text-3xl rounded-[30px] cursor-pointer "></i>
                 </a>
             </div>
 
         </div>
 
-        <p class="text-xl py-3 text-center mt-4">© kawsar firoz. All right reserved</p>
+        <p class="text-[16px] py-3 text-center mt-4 e">© <a href="https://portfolio-c34cf.firebaseapp.com/"
+                class="" target="_blank">kawsar firoz</a>. All right reserved</p>
     </footer>
-
-
     <!-- footer -->
 
     <script>

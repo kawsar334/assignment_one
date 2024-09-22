@@ -19,7 +19,8 @@ frontend.forEach(item => {
   </div>
 </dialog>
       <figure>
-        <img src="${item.img}" alt="${item.title}" />
+        <img src="../${item.img}" alt="${item.title}" />
+        
       </figure>
       <div class="card-body">
         <h2 class="card-title">${item.title}</h2>
@@ -30,7 +31,7 @@ frontend.forEach(item => {
       </div>
     </div>
   `;
-    itemDiv.classList.add("flex", "justify-center", "items-center", "bg-[gray]", "card", "bg-base-100", "image-full",);
+    itemDiv.classList.add("flex", "justify-center", "items-center", "bg-[black]", "card", "bg-base-100", "image-full",'cursor-pointer');
     element.appendChild(itemDiv);
 });
 
