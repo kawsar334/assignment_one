@@ -67,7 +67,7 @@
                 </div>
                 <a href="#intro"
                     class="btn btn-ghost text-xl lato  flex justify-center items-center cursor-pointer capitalize ">
-                    <img src="./images/logo.webp" alt="" class="w-[30px] h-[30px]   rounded ">
+                    <img src="../assets/logo.webp" alt="" class="w-[30px] h-[30px]   rounded ">
                     <span>Peddy</span>
                 </a>
             </div>
@@ -80,10 +80,10 @@
                 </ul>
             </div>
             <div class="navbar-end mr-5">
-                <a
+                <button onclick="showRegAndLogin()"
                     class="border-[2px] rounded-full p-4 w-[30px] h-[30px] flex justify-center items-center cursor-pointer">
                     <i class="fa-regular fa-user "></i>
-                </a>
+                </button>
             </div>
         </div>
         <!-- navbar end here -->
@@ -100,12 +100,91 @@
                         story, waiting to be discovered by you.
                     </p>
                     <a href="#products" class="text-[white] lato  rounded py-1 px-3 bg-btn_bg">View More</a>
-                    <img src="./images/pet.webp" alt="" class="mt-[0px]">
+                    <img src="../assets/pet.webp" alt="" class="mt-[0px]">
                 </div>
             </div>
         </div>
         <!-- hero section end here  -->
     </header>
+
+    <div class="w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)]  fixed top-0 z-30 hidden justify-center items-center flex-col  gap-5" id="login_container">
+
+        <button id="close_login_form" class="absolute right-[100px] bg-[crimson] text-[white] px-4 py-1 rounded top-[40px] cursor-pointer"> close</button>
+
+        <!-- login -->
+        <div id="login" class="w-[400px]  p-6 shadow">
+            <div class="min-h-screen flex items-center justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+                    <h2 class="text-2xl font-bold text-center mb-6">Login to Your Account</h2>
+            
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+       
+                        <div class="mb-6">
+                            <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+            
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                Login
+                            </button>
+                        </div>
+                        <div>
+                        </form>
+                        <button id="showReg"
+                            class="w-full  my-2">
+                            Don't have any account ? <b>Register </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- login -->
+         <!-- register -->
+        <div id="register" class="w-[400px]  p-6 shadow  hidden">
+            <div class="min-h-screen flex items-center justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+                    <h2 class="text-2xl font-bold text-center mb-6">Create Your Account</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+            
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- register -->
+
+
+    </div>
 
 
 
@@ -192,7 +271,7 @@
         <nav>
             <a href="#intro"
                 class=" text-xl lato  flex justify-center items-center  gap-4 my-3 cursor-pointer capitalize ">
-                <img src="./images/logo.webp" alt="" class="w-[30px] h-[30px] object-cover ">
+                <img src="../assets/logo.webp" alt="" class="w-[30px] h-[30px]  ">
                 <span>Peddy</span>
             </a>
 
@@ -244,6 +323,9 @@
 
     <!-- javascript file links -->
     <script src="index.js"></script>
+    <script src="htmlContents.js"></script>
+
+
 </body>
 
 </html>
